@@ -1,0 +1,462 @@
+@charset "utf-8";
+
+/* ========== すべて共通 ========== */
+html, body {
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #393939;
+	background: #efefef;
+}
+
+body, div, p, h1, h2, h3, h4, ul, figure {
+	margin: 0;
+	padding: 0;
+}
+
+p, td, th, li {
+	line-height: 1.8;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+a {
+	color: #709a00;
+}
+
+a:hover {
+	color: #95cd00;
+}
+
+a:active {
+	color: #4b6700;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* 共通の見出し */
+main h1 {
+	margin-bottom: 1rem;
+	border-bottom: 1px dashed #c84040;
+	font-weight: normal;
+	font-size: 1.6rem;
+}
+
+.container {
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: 1000px;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/* ============ header ============ */
+header{
+	background: red;
+}
+
+.header-inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-logo{
+	padding: 10px 0;
+	width: 160px;
+	height: 37px;
+}
+
+.menu-btn{
+	padding: 10px 0;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	width: 40px;
+	height: 40px;
+	background:url(../images/hamburger.png) no-repeat center center;
+	background-size: contain;
+}
+@media screen and (min-width: 768px){
+	.header-logo {
+		padding: 20px 0;
+		width: 200px;
+		height: 46px;
+	}
+
+	.menu-btn{
+		display: none;
+	}
+}
+/* ============ header ============ */
+/* ============ nav ============ */
+nav{
+	background: black;
+}
+
+.navbar{
+	list-style-type: none;
+	display: none;
+}
+
+.navbar a{
+	padding: 0.6rem 0;
+	display: block;
+	text-decoration: none;
+	background: black;
+	color: white;
+
+}
+
+.navbar a:hover {
+	background: #c84040;
+}
+
+@media screen and (min-width: 768px) {
+	.navbar {
+		display: flex !important;
+	}
+	.navbar li {
+		flex: 1 1 auto;
+		text-align: center;
+	}
+	.navbar a.nav-current {
+		background: #c84040;
+	}
+}
+/* ============ nav ============ */
+/* ============ main ============ */
+main{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #efefef;
+}
+
+@media screen and (min-width: 768px){
+	main{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+/*section .container{
+	padding: 0;
+	max-width: 100%;
+}*/
+
+.main-logo{
+	/*display: block;*/
+	max-width: 100%;
+	height: auto;
+}
+
+.home-maincopy{
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+@media screen and (min-width: 768px){
+	.home-maincopy{
+		font-size: 2.4rem;
+	}
+}
+
+.yellow-letter{
+	color: #f8b173;
+}
+
+.blue-letter{
+	color: #74b9d9;
+}
+
+.green-letter{
+	color: #8bca85;
+}
+
+.red-letter{
+	color: #f8817e;
+}
+
+.main-container{
+	max-width: 1000px;
+}
+
+.home-maincopy strong{
+	color: #d72c31;
+}
+
+.info{
+	color:#d72c31;
+	margin-top: 40px;
+}
+
+.home-news{
+	display: flex;
+	flex-flow: column;
+	border:solid 5px white;
+	border-radius: 10px;
+	padding: 20px 0 20px 0;
+	background: white;
+	margin-bottom: 20px;
+}
+
+.home-news li{
+	margin-left: 30px;
+}
+
+hr {
+	background-color: #d72c31;
+	border-top: 2px dashed #8c8b8b;
+}
+
+h2{
+	color: #d72c31;
+}
+
+.home-course{
+	display: flex;
+	flex-flow: column;
+}
+
+.home-course li{
+	flex: 1 1 auto;
+	list-style-type: none;
+	border:solid 5px #fff;
+	margin: 0 2px 4px 2px;
+	background: #fff;
+}
+
+@media screen and (min-width: 768px){
+	.home-course{
+		flex-flow: row;
+	}
+}
+
+.home-course a{
+	color: #393939;
+	text-decoration: none;
+}
+
+.home-course figure:hover {
+	opacity: 0.5;
+}
+
+.home-course figcaption {
+	padding:  15px 0;
+	font-size: 0.9rem;
+	text-align: center;
+	font-weight: bold;
+}
+/* ============ main ============ */
+/* ============ footer ============ */
+
+footer{
+	background: #c84040;
+	font-size: 0.9rem;
+	color: #fff;
+}
+footer .container{
+	padding: 20px 20px;
+}
+
+.footer-nav{
+	display: flex;
+	list-style-type: none;
+}
+
+footer li a{
+	text-decoration: none;
+	margin-right: 16px;
+	color: #fff;
+}
+
+.footer-nav a:hover {
+	opacity: 0.5;
+}
+
+
+/* ============ footer ============ */
+
+
+/* ====================== Course page ======================== */
+/* ============ main ============ */
+.course-container{
+	margin: 10px 10px;
+}
+.course-info{
+		display: flex;
+		flex-flow: column;
+	}
+
+	.course-image img{
+	border-radius: 10px;
+}
+
+@media screen and (min-width: 768px){
+	.course-info{
+		flex-flow: row;
+	}
+
+	.course-image{
+		flex: 1 1 400px;
+		margin-right: 20px;
+
+	}
+
+	.course-text{
+		flex: 1 1 580px;
+	}
+}
+
+.course-name{
+	color: black;
+	margin: 10px 0;
+}
+
+.tech-list{
+		list-style-type: none;
+}
+.tech{
+	display: inline-block;
+	border:1px red solid;
+	background: red;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	margin-right: 5px;
+	padding: 2px 7px;
+	font-size: 12px;
+}
+
+
+
+	.wordpress-pic{
+	margin-top: 40px;
+	border-radius: 25px;
+}
+
+
+.course-instraction{
+	background: white url(../images/point.png) no-repeat;
+	background-size: 50px 50px;
+	padding: 25px;
+	border-radius: 5px;
+	margin:30px 0;
+
+}
+.plan-table{
+	border-collapse: collapse;
+	margin:10px 0;
+}
+
+tr{
+	border-bottom: solid 1px black;
+	height: 50px;
+}
+th,td{
+	padding: 10px 20px;
+}
+
+.course-instructor{
+	overflow: hidden;
+}
+
+.funade-pic{
+	border-radius: 50%;
+	width: 20%;
+	height: 20%;
+	float: left;
+	margin-right: 20px;
+}
+
+.funade-name{
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+.instructor-heading{
+	margin-top: 40px;
+}
+
+.course-button{
+	display: block;
+	width: 300px;
+	background: green;
+	font-size: 18px;
+	padding: 1rem 0;
+	margin: 30px auto;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+}
+
+/* ============ main ============ */
+
+/* ============ contact ============ */
+/* ============ main ============ */
+
+.contact-form{
+	margin: 10px 0;
+}
+.form-container{
+	padding: 20px;
+	background: white;
+	border-radius: 10px;
+}
+
+.form-container input{
+	width: 100%;
+	line-height: 2rem;
+}
+.form-container textarea{
+	width: 100%;
+	height: 200px;
+}
+input[type="submit"]{
+	text-align: center;
+	background: green;
+	border-radius: 10px;
+	color: white;
+	padding: 10px 50px;
+	border:none;
+	text-decoration: none;
+	font-size: 1.2rem;
+	width: 300px;
+}
+.contact-button:active{
+	border:solid 2px blue;
+	border-radius: 0;
+}
+
+@media screen and (min-width:768px){
+	.form-container input{
+	width: 50%;
+	}
+}
+
+.qanda-table th{
+	padding: 0px;
+}
+
+.question{
+	color: #4dc268;
+	font-weight: bold;
+}
+
+.qusetion-img{
+	height: 40px;
+	width: 40px;
+
+}

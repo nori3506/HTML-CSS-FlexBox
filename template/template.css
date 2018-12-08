@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/* ========== すべて共通 ========== */
+html, body {
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #393939;
+	background: #efefef;
+}
+body, div, p, h1, h2, h3, h4, ul, figure {
+	margin: 0;
+	padding: 0;
+}
+p, td, th, li {
+	line-height: 1.8;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+a {
+	color: #709a00;
+}
+a:hover {
+	color: #95cd00;
+}
+a:active {
+	color: #4b6700;
+}
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+/* 共通の見出し */
+main h1 {
+	margin-bottom: 1rem;
+	border-bottom: 1px dashed #c84040;
+	font-weight: normal;
+	font-size: 1.6rem;
+}
+
+.container {
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: 1000px;
+}
+@media screen and (min-width: 768px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/* ============ header ============ */
+header{
+	background: red;
+}
+.header-inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.header-logo{
+	padding: 10px 0;
+	width: 160px;
+	height: 37px;
+}
+header.container{
+
+}
+.menu-btn{
+	padding: 10px 0;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	width: 40px;
+	height: 40px;
+	background:url(../images/hamburger.png) no-repeat center center;
+	background-size: contain;
+}
+@media screen and (min-width: 768px){
+	.header-logo {
+		padding: 20px 0;
+		width: 200px;
+		height: 46px;
+	}
+
+	.menu-btn{
+		display: none;
+	}
+
+}
+/* ============ header ============ */
+/* ============ nav ============ */
+nav{
+	background: pink;
+}
+
+.navbar{
+	list-style-type: none;
+	display: none;
+}
+.navbar a{
+	padding: 0.6rem 0;
+	display: block;
+	text-decoration: none;
+}
+.navbar a:hover {
+	background: #c84040;
+}
+
+@media screen and (min-width: 768px) {
+	.navbar {
+		display: flex !important;
+	}
+	.navbar li {
+		flex: 1 1 auto;
+		text-align: center;
+	}
+	.navbar a.nav-current {
+		background: #c84040;
+	}
+}
+/* ============ nav ============ */
+/* ============ main ============ */
+
+main{
+	background: green;
+}
+
+/* ============ main ============ */
+/* ============ footer ============ */
+
+footer{
+	background: #c84040;
+	font-size: 0.9rem;
+	color: #fff;
+}
+footer .container{
+	padding: 20px 20px;
+}
+
+.footer-nav{
+	display: flex;
+	list-style-type: none;
+}
+
+footer li a{
+	text-decoration: none;
+	margin-right: 16px;
+	color: #fff;
+}
+
+.footer-nav a:hover {
+	opacity: 0.5;
+}
+
+
+/* ============ footer ============ */
